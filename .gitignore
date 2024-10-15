@@ -1,0 +1,39 @@
+# Global .env files
+.env
+.env.*  # For multiple environment-specific files like .env.development, .env.production, etc.
+
+# Django-related ignores
+*.pyc
+__pycache__/
+media/  # If you have user-uploaded files saved here
+staticfiles/  # Static files collected via collectstatic
+*.log  # Log files
+*.pot  # Translation files
+*.mo
+*.py[cod]
+*.pyo
+coverage/  # Ignore coverage reports if using coverage.py
+*.env
+.DS_Store  # MacOS system files
+
+# React-related ignores
+node_modules/  # Node.js dependencies folder
+build/  # Build output folder (can be named 'dist' or 'build' depending on your setup)
+dist/
+public/static/  # If static assets are generated during build
+
+# Ignore specific package files
+package-lock.json
+yarn.lock 
+npm-debug.log
+yarn-error.log
+
+# IDE-specific ignores (VSCode, JetBrains, etc.)
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS-specific ignores
+.DS_Store  # MacOS Finder metadata files
+Thumbs.db  # Windows thumbnail cache files
